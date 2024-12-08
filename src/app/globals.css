@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream-50: #FAF5F0;
+  --color-brown-100: #D2B48C;
+  --color-brown-500: #8B4513;
+  --color-brown-800: #5D3A1A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-brown-500 text-cream-50 rounded-lg hover:bg-brown-800 transition-colors;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold text-brown-800 mb-8 text-center;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brown-500);
+  border-radius: 4px;
+}
