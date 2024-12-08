@@ -1,3 +1,6 @@
+# cafe-website
+A well-designed café website!
+
 # Next.js + Tailwind CSS Example
 
 Tailwind CSS is integrated into the `create-next-app` CLI, which supports TypeScript and JavaScript, as well as the App Router (`app/`) and the pages directory `pages/`.
